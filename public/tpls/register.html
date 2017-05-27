@@ -1,0 +1,53 @@
+<div class="row" style="margin-top: 20px">
+    <div class="col-md-offset-4 col-md-4">
+        <div class="alert alert-danger" ng-show="showError">{{message}}</div>
+    </div>
+</div>
+<div class="row" style="margin-top: 20px">
+    <div class="col-md-offset-4 col-md-4">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <div class="panel-title">
+                    免费注册
+                </div>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal" role="form" name="formTpl">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">姓名</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" ng-bind="user.name" name="name" id="name" placeholder="请输入姓名" required/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">登录名</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" ng-bind="user.loginName" name="loginName" id="loginName" placeholder="请输入登录名" required/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="control-label col-md-3">密码</label>
+                                <div class="col-md-8">
+                                    <input type="password" class="form-control" ng-bind="user.password" name="password" id="password" placeholder="请输入密码" required/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-offset-3 col-md-8">
+                            <button class="btn btn-primary" type="submit" ng-disabled="formTpl.$invalid">
+                                注册
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

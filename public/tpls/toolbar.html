@@ -1,0 +1,23 @@
+<div>
+    <nav class="nav navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">FlyBid</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="">{{nowDate}}</a></li>
+                    <li ui-sref='index.logIn' ng-hide="!!loginUser.name"><a href="#">登陆</a></li>
+                    <li ui-sref='index.logOut' ng-show="!!loginUser.name"><a href="#">登出</a></li>
+                    <li ui-sref='index.register'><a href="#">注册</a></li>
+                    <li title="用户管理">
+                        <a href="">
+                            <span class="glyphicon glyphicon-user"></spman>
+                            {{loginUser.name}} 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
